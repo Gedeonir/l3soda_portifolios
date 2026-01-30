@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Profile Cards</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f6f8fb;
+      padding: 40px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      width: 220px;
+      padding: 20px 30px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .portfolio-link {
+      text-decoration: none;
+      font-size: 14px;
+      color: #1a73e8;
+      font-weight: 500;
+    }
+
+    .portfolio-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cards">
+    <div class="card">
+      <h3>John Doe</h3>
+      <p>Web Development</p>
+      <a href="#" class="portfolio-link">Portfolio</a>
+    </div>
+
+    <div class="card">
+      <h3>Mary Smith</h3>
+      <p>Graphic Design</p>
+      <a href="#" class="portfolio-link">Portfolio</a>
+    </div>
+
+    <div class="card">
+      <h3>Alex Brown</h3>
+      <p>Mobile Apps</p>
+      <a href="#" class="portfolio-link">Portfolio</a>
+    </div>
+  </div>
+
+</body>
+</html>
