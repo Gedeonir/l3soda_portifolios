@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Opportun | Portfolio</title>
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px 10%;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
+      z-index: 100;
+    }
+
+    nav h1 {
+      font-size: 24px;
+      color: #00ffd5;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav ul li:hover {
+      color: #00ffd5;
+      cursor: pointer;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 10%;
+      background: linear-gradient(135deg, #000, #111);
+    }
+
+    .hero h2 {
+      font-size: 48px;
+    }
+
+    .hero span {
+      color: #00ffd5;
+    }
+
+    .hero p {
+      margin: 20px 0;
+      max-width: 600px;
+      color: #cccccc;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
+      background: #00ffd5;
+      color: #000;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: #00c7a7;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 100px 10%;
+    }
+
+    section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      text-align: center;
+      color: #00ffd5;
+    }
+
+    /* ABOUT */
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      color: #dddddd;
+    }
+
+    /* SKILLS */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-box {
+      background: #1a1a1a;
+      padding: 30px;
+      text-align: center;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    .skill-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 255, 213, 0.2);
+    }
+
+    /* PROJECTS */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      background: #1a1a1a;
+      padding: 25px;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 30px rgba(0, 255, 213, 0.2);
+    }
+
+    /* CONTACT */
+    .contact p {
+      text-align: center;
+      color: #cccccc;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 30px;
+      text-align: center;
+      background: #000;
+      color: #777;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 36px;
+      }
+
+      nav ul {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h1>Opportun</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div>
+      <h2>Hello, I'm <span>Opportun</span></h2>
+      <p>
+        A passionate web developer focused on building modern, responsive,
+        and user-friendly websites.
+      </p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a creative developer who enjoys turning ideas into real-world web
+      experiences. I focus on clean design, smooth animations, and strong
+      usability.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">web development</div>
+      <div class="skill-box">UI / UX</div>
+      <div class="skill-box">game development</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Jersey selling website</h3>
+       <p>A website that sells teams jersey and ship them to all countries</p>
+      </div>
+      <div class="project-card">
+        <h3>Shoes selling website</h3>
+        <p>a web that sells sports and designer shoes</p>
+      </div>
+      <div class="project-card">
+        <h3>A car website</h3>
+        <p>A website that sells and rents cars online</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: ndekeziopportun96@email.com</p>
+    <p>Phone: +250 793118989</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Opportun. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
