@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ganza Al Khalid | Software Developer</title>
+
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --fg: #ffffff;
+      --muted: #b3b3b3;
+      --gradient: linear-gradient(135deg, #ffffff, #6e6e6e);
+      --card: #111;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 6vw, 5rem);
+      font-weight: 800;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .hero button {
+      margin-top: 40px;
+      padding: 14px 28px;
+      background: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .hero button:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    /* ABOUT */
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      color: var(--muted);
+    }
+
+    /* SKILLS */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: var(--card);
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #1e1e1e;
+      transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* PROJECTS */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: var(--card);
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid #1f1f1f;
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* CONTACT */
+    .contact {
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      color: var(--muted);
+      margin-bottom: 30px;
+    }
+
+    .contact a {
+      display: inline-block;
+      padding: 14px 28px;
+      border: 1px solid #fff;
+      transition: all 0.3s ease;
+    }
+
+    .contact a:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    footer {
+      padding: 40px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .about {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Ganza Al Khalid</h1>
+    <p>
+      Software Development student focused on building clean, functional,
+      and modern digital experiences.
+    </p>
+    <button onclick="scrollToSection('projects')">View My Work</button>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div>
+      <h2>About Me</h2>
+      <p>
+        I’m Ganza Al Khalid, a software development student passionate about
+        problem-solving, user-focused design, and scalable applications.
+        I enjoy turning ideas into elegant, efficient code.
+      </p>
+    </div>
+    <div>
+      <h2>Education</h2>
+      <p>
+        Studying Software Development with a strong interest in web
+        technologies, application development, and modern UI/UX systems.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2 style="margin-bottom: 40px;">Skills</h2>
+    <div class="skills">
+      <div class="skill-card">HTML & CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Web Design</div>
+      <div class="skill-card">Problem Solving</div>
+      <div class="skill-card">Git & Version Control</div>
+      <div class="skill-card">Responsive Design</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2 style="margin-bottom: 40px;">Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A modern personal portfolio built with clean layouts and minimal design.</p>
+      </div>
+      <div class="project-card">
+        <h3>Web Application</h3>
+        <p>A functional web app focusing on performance and usability.</p>
+      </div>
+      <div class="project-card">
+        <h3>Software Project</h3>
+        <p>A development project demonstrating logical thinking and structure.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <h2>Get In Touch</h2>
+    <p>Interested in working together or learning more about my work?</p>
+    <a href="mailto:alkhaliganza@gmail.com">Contact Me</a>
+  </section>
+
+  <footer>
+    © 2026 Ganza Al Khalid. All rights reserved.
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
