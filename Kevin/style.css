@@ -1,0 +1,101 @@
+:root{
+  --bg:#f9fafb;
+  --text:#111827;
+  --card:#ffffff;
+  --primary:#4f46e5;
+}
+
+body.dark{
+  --bg:#0f172a;
+  --text:#e5e7eb;
+  --card:#1e293b;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  background:var(--card);
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:20px;
+}
+
+nav a{
+  text-decoration:none;
+  color:var(--text);
+}
+
+.logo{
+  color:var(--primary);
+}
+
+.hero{
+  text-align:center;
+  padding:100px 20px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:10px 20px;
+  background:var(--primary);
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+}
+
+.content{
+  padding:60px 40px;
+}
+
+.card{
+  background:var(--card);
+  padding:20px;
+  border-radius:8px;
+  margin-top:20px;
+}
+
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:15px;
+}
+
+.skills li{
+  background:var(--primary);
+  color:white;
+  padding:6px 12px;
+  border-radius:5px;
+  list-style:none;
+}
+
+.contact-form{
+  max-width:400px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+input, textarea{
+  padding:10px;
+  border-radius:5px;
+  border:1px solid #ccc;
+}
