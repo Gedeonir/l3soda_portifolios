@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunga Ellie | Software Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --border: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Header Section */
+        header {
+            margin-bottom: 4rem;
+            padding-top: 4rem;
+        }
+
+        .tag {
+            font-family: 'Fira Code', monospace;
+            color: var(--accent);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+            margin-bottom: 1rem;
+        }
+
+        .hero-desc {
+            font-size: 1.25rem;
+            color: var(--text-dim);
+            max-width: 600px;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            color: var(--accent);
+        }
+
+        /* Projects Grid */
+        .project-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            transition: transform 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+
+        .project-card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+        }
+
+        /* Skills */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            font-family: 'Fira Code', monospace;
+        }
+
+        .skill-item {
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        /* Contact */
+        .contact-link {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 1.1rem;
+            display: inline-block;
+            margin-right: 2rem;
+            border-bottom: 1px dashed var(--accent);
+            padding-bottom: 2px;
+        }
+
+        .contact-link:hover {
+            color: var(--accent);
+        }
+
+        footer {
+            margin-top: 8rem;
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+            body { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <span class="tag">System.out.println("Hello World");</span>
+            <h1>Tunga Ellie.</h1>
+            <p class="hero-desc">
+                Full-stack developer specializing in building scalable distributed systems and clean, user-centric interfaces.
+            </p>
+        </header>
+
+        <section id="about">
+            <h2>01. About</h2>
+            <p>
+                I am a software engineer driven by the challenge of turning complex problems into elegant, efficient code. With a background in computer science and a passion for open-source, I focus on building tools that matter.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>02. Selected Work</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Nexus API Gateway</h3>
+                    <p>A high-performance gateway built in Go, handling over 10k requests/sec with minimal latency.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Aether UI Kit</h3>
+                    <p>A minimalist design system for React, focused on accessibility and motion design.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Sentinel Database</h3>
+                    <p>An experimental distributed key-value store emphasizing eventual consistency and speed.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>03. Tech Stack</h2>
+            <div class="skills-list">
+                <span class="skill-item">TypeScript</span>
+                <span class="skill-item">Go</span>
+                <span class="skill-item">Rust</span>
+                <span class="skill-item">PostgreSQL</span>
+                <span class="skill-item">Docker</span>
+                <span class="skill-item">React/Next.js</span>
+                <span class="skill-item">AWS</span>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>04. Get In Touch</h2>
+            <p style="margin-bottom: 1.5rem;">Currently open to new opportunities and collaborations.</p>
+            <a href="mailto:hello@tungaellie.dev" class="contact-link">Email</a>
+            <a href="#" class="contact-link">GitHub</a>
+            <a href="#" class="contact-link">LinkedIn</a>
+        </section>
+
+        <footer>
+            &copy; 2026 Designed & Built by Tunga Ellie
+        </footer>
+    </div>
+
+</body>
+</html>
